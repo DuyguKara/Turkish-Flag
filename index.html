@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Turkish Flag</title>
+
+        <style>
+            .flag {
+                background-color: #e30a17;
+                height: 600px;
+                width: 900px;
+                position: relative;
+                border: 5px solid black;
+            }
+
+            .line {
+                background-color: white;
+                height: 600px;
+                width: 20px;
+                position: absolute;
+            }
+
+            .shape1{
+                background-color: white;
+                height: 300px;
+                width: 300px;
+                position: relative;
+                left: 170px;
+                top: 100px;
+                border-radius: 50%;
+
+            }
+            .shape2 {
+                background-color: #e30a17;
+                height: 240px;
+                width: 240px;
+                position: relative;
+                left: 67.5px;
+                top: 30px;
+                border-radius: 50%;
+            }
+            
+            #star-five {
+                margin: 50px 0;
+                position: relative;
+                display: block;
+                color: #e30a17;
+                width: 0px;
+                height: 0px;
+                border-right: 100px solid transparent;
+                border-bottom: 70px solid white;
+                border-left: 100px solid transparent;
+                transform: rotate(35deg);
+                left: 170px;
+                top:85px;
+                transform: rotate(53deg);
+            }
+            #star-five:before {
+                border-bottom: 70px solid white;
+                border-left: 20px solid transparent;
+                border-right: 30px solid transparent;
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -45px;
+                left: -65px;
+                display: block;
+                content: '';
+                transform: rotate(-35deg);
+            }
+                #star-five:after {
+                position: absolute;
+                display: block;
+                color: white;
+                top: 3px;
+                left: -105px;
+                width: 0px;
+                height: 0px;
+                border-right: 100px solid transparent;
+                border-bottom: 70px solid white;
+                border-left: 100px solid transparent;
+                transform: rotate(-70deg);
+                content: '';
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flag">
+            <div class="line">
+                <div class="shape1">
+                    <div class="shape2">
+                        <div id="star-five"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
